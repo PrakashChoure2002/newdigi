@@ -45,10 +45,44 @@ const Carsole = () => {
   >
     
     
-    <SwiperSlide><img src='https://ps-beautyshop.myshopify.com/cdn/shop/files/Slider_banner_2_2ce7b884-55c4-4340-86b2-6ee5332c3356.png?v=1613696346'   
-            alt='slide1'/></SwiperSlide>
-    <SwiperSlide><img src='https://ps-beautyshop.myshopify.com/cdn/shop/files/Slider_banner_1_2bc6d970-e7ca-43c4-a86b-fc9b25020f62.png?v=1613696346' alt='slide2'/></SwiperSlide>
-    <SwiperSlide><img src='https://ps-beautyshop.myshopify.com/cdn/shop/files/Slider_banner_1_2bc6d970-e7ca-43c4-a86b-fc9b25020f62.png?v=1613696346' alt='silde3' /></SwiperSlide>
+    <SwiperSlide>
+        <div className="relative w-full h-full">
+          <img
+            src="https://ps-beautyshop.myshopify.com/cdn/shop/files/Slider_banner_2_2ce7b884-55c4-4340-86b2-6ee5332c3356.png?v=1613696346"
+            alt="slide1"
+            className="w-full h-full object-cover"
+          />
+       <div className="absolute top-10 right-10 p-4 m-60 text-center">
+  <p className="font-italianno font-cursive text-black text-3xl">Free delivery upto Rs.500</p>
+  <h1 className="text-pink-500  font-bold text-6xl">FASHION 2024</h1>
+  <h5 className="text-black  text-3xl "><>-------------------</>SHOP NOW</h5>
+</div>
+        </div>
+      </SwiperSlide>
+    <SwiperSlide><div className="relative w-full h-full">
+  <img
+    src="https://ps-beautyshop.myshopify.com/cdn/shop/files/Slider_banner_1_2bc6d970-e7ca-43c4-a86b-fc9b25020f62.png?v=1613696346"
+    alt="slide1"
+    className="w-full h-full object-cover"
+  />
+  <div className="absolute top-10 left-8 md:left-20 p-4 md:p-8 text-center">
+    <p className="font-italianno font-cursive text-black text-lg md:text-3xl">Offer Available at 50% OFF</p>
+    <h1 className="text-pink-400 font-bold text-4xl md:text-6xl">BEAUTY WORLD</h1>
+    <h5 className="text-black text-lg md:text-3xl"><>-------------------</>SHOP NOW</h5>
+  </div>
+</div></SwiperSlide>
+    <SwiperSlide><div className="relative w-full h-full">
+          <img
+            src="https://ps-beautyshop.myshopify.com/cdn/shop/files/Slider_banner_1_2bc6d970-e7ca-43c4-a86b-fc9b25020f62.png?v=1613696346"
+            alt="slide1"
+            className="w-full h-full object-cover"
+          />
+       <div className="absolute top-10 left-8 p-4 m-60 text-center">
+  <p className="font-italianno font-cursive text-black text-3xl">Offer Avabile at 50% OFF</p>
+  <h1 className="text-pink-400  font-bold text-6xl">BEAUTY WORLD</h1>
+  <h5 className="text-black  text-3xl "><>-------------------</>SHOP NOW</h5>
+</div>
+        </div></SwiperSlide>
     
   </Swiper>
     </>
