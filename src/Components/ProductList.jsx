@@ -1,7 +1,18 @@
 import React from 'react'
 import { Product } from './project/project'
+import {  useDispatch } from 'react-redux'
+import { add } from './store/cartSlice'
 
 const ProductList = () => {
+  const dispatch=useDispatch()
+
+  const addToCart=(item)=>{
+    // here we dispatch the add ot other function
+    dispatch(add(item))
+    console.log(add(item))
+     
+  }
+
   return (
     <>
     
@@ -17,7 +28,7 @@ const ProductList = () => {
                 <h3 className='text-lg font-semibold'>{item.Name}</h3>
                 <p className='text-gray-700 mt-2'>Price: RS.{item.Price}</p>
                 <p className='text-gray-700 mt-2'>{item.des}</p>
-                <button className='bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 hover:bg-blue-600'>ADD TO CART</button>
+                <button className='bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 hover:bg-blue-600' onClick={()=>addToCart(item)}>ADD TO CART</button>
             </div>
         </div>
     ))}

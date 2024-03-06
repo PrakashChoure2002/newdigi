@@ -13,25 +13,30 @@ import Heading from './Heading'
 
 
 
+
+
 const Home = () => {
   
     return (
     <>
+   
     <div className="bg-Img relative z-10">
-    <Carsole/>
+      
+     <Carsole/>
     <BeautyImage/>
     <Heading/>
     <ActiveSlider/>
     <Heading/>
    <ProductList/>
-        <Layer/>
+         <Layer/> 
         {/* <Assets/> */}
-        <Heading/>
+         <Heading/> 
 
-        <Bottom/>
-        <NewsLetter/>
+         <Bottom/>
+        <NewsLetter/> 
 
     </div>
+ 
 
 
 
