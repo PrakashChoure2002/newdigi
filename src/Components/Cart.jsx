@@ -16,6 +16,13 @@ const Cart = () => {
     };
 
     const total = products.reduce((sum, item) => sum + item.quantity * item.price, 0);
+    if (products.length === 0) {
+        return (<div className="flex items-center justify-center h-screen">
+        <div className="text-center">
+            <p className="text-2xl font-semibold text-blue-500">Cart is empty</p>
+        </div>
+    </div>)
+    }
 
     const card = products.map((item) => (
         <div key={item.id} className='flex items-center justify-between p-4 border-b'>
@@ -31,12 +38,12 @@ const Cart = () => {
                 <button className='bg-blue-500 text-white px-4 py-2 rounded-lg mr-4 hover:bg-blue-600' onClick={() => removeItem(item.id)}>Remove</button>
                 <div className='flex items-center border border-gray-300 rounded-lg px-2'>
                     <button className='text-gray-500 hover:text-gray-700' onClick={() => updateItemQuantity(item.id, item.quantity - 1)}>-</button>
-                    <p className='mx-2'>{item.quantity}</p>
+                    <p className='mx-2 text-black'>{item.quantity}</p>
                     <button className='text-gray-500 hover:text-gray-700' onClick={() => updateItemQuantity(item.id, item.quantity + 1)}>+</button>
                 </div>
             </div>
             <div>
-                <p className='font-semibold'>Total: RS.{item.quantity* item.price}</p>
+                <p className='font-semibold text-black'>Total: RS.{item.quantity* item.price}</p>
                 
 
             </div>
@@ -44,9 +51,9 @@ const Cart = () => {
     ));
 
     return (
-        <div>
+        <div> 
             {card}
-            <div className='flex justify-between p-4'>
+            <div className='flex justify-between p-4 '>
             <div className='p-4'>
     <p className='font-semibold text-2xl text-blue-500'>Overall Total: RS.{total}</p>
 </div>

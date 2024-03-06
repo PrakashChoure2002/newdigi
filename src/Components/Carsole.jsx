@@ -52,11 +52,11 @@ const Carsole = () => {
             alt="slide1"
             className="w-full h-full object-cover"
           />
-       <div className="absolute top-10 right-10 p-4 m-60 text-center">
-  <p className="font-italianno font-cursive text-black text-3xl">Free delivery upto Rs.500</p>
-  <h1 className="text-pink-500  font-bold text-6xl">FASHION 2024</h1>
-  <h5 className="text-black  text-3xl "><>-------------------</>SHOP NOW</h5>
-</div>
+      <div className="absolute  top-0 md:top-20 right-2 py-8 left-33 md:right-20 flex flex-col items-center justify-center p-10 text-center md:text-right">
+      <p className="font-italianno font-cursive text-black text-xs md:text-3xl">Free delivery upto Rs.500</p>
+      <h1 className="text-pink-500 font-bold text-2xl md:text-6xl">FASHION 2024</h1>
+      <h5 className="text-black text-xs md:text-3xl"><>-------------------</>SHOP NOW</h5>
+    </div>
         </div>
       </SwiperSlide>
     <SwiperSlide><div className="relative w-full h-full">
@@ -65,11 +65,13 @@ const Carsole = () => {
     alt="slide1"
     className="w-full h-full object-cover"
   />
-  <div className="absolute top-10 left-8 md:left-20 p-4 md:p-8 text-center">
-    <p className="font-italianno font-cursive text-black text-lg md:text-3xl">Offer Available at 50% OFF</p>
-    <h1 className="text-pink-400 font-bold text-4xl md:text-6xl">BEAUTY WORLD</h1>
-    <h5 className="text-black text-lg md:text-3xl"><>-------------------</>SHOP NOW</h5>
-  </div>
+  <div className="absolute  top-0 md:top-20 left-2 py-8 left-33 md:left-20 flex flex-col items-center justify-center p-10 text-center md:text-right">
+      <p className="font-italianno font-cursive text-black text-xs md:text-3xl">OFFER AVALIBLE upto Rs.50%</p>
+      <h1 className="text-pink-500 font-bold text-2xl md:text-6xl">FASHION 2024</h1>
+      <h5 className="text-black text-xs md:text-3xl"><>-------------------</>BEAUTY IMAGE</h5>
+      
+      </div>
+      
 </div></SwiperSlide>
     <SwiperSlide><div className="relative w-full h-full">
           <img
@@ -77,11 +79,11 @@ const Carsole = () => {
             alt="slide1"
             className="w-full h-full object-cover"
           />
-       <div className="absolute top-10 left-8 p-4 m-60 text-center">
-  <p className="font-italianno font-cursive text-black text-3xl">Offer Avabile at 50% OFF</p>
-  <h1 className="text-pink-400  font-bold text-6xl">BEAUTY WORLD</h1>
-  <h5 className="text-black  text-3xl "><>-------------------</>SHOP NOW</h5>
-</div>
+     <div className="absolute  top-0 md:top-20 left-2 py-8 left-33 md:left-20 flex flex-col items-center justify-center p-10 text-center md:text-right">
+      <p className="font-italianno font-cursive text-black text-xs md:text-3xl">Free delivery upto Rs.500</p>
+      <h1 className="text-pink-500 font-bold text-2xl md:text-6xl">FASHION 2024</h1>
+      <h5 className="text-black text-xs md:text-3xl"><>-------------------</>SHOP NOW</h5>
+    </div>
         </div></SwiperSlide>
     
   </Swiper>

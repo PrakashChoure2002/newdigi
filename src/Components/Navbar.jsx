@@ -8,8 +8,11 @@ import { MdAccountCircle } from "react-icons/md";
 import { AiOutlineMenu } from 'react-icons/ai';
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
-import Cart from './Cart';
+// import Cart from './Cart';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
  import { useSelector } from 'react-redux';
+//  import { FaShoppingCart } from "react-icons/fa";
 
 
 const Navbar = () => {
@@ -54,7 +57,7 @@ const Navbar = () => {
                 </div>
                 <div className="links">
                     <ul className={`gap-14 capitalize text-lg ${toggle ? 'block' : 'hidden'} md:flex cursor-pointer`}>
-                    <li className='p-5'>home</li>
+                   <Link to="/"> <li className='p-5 text-black'>home</li></Link>
                         <li className='p-5'>shop</li>
                         <li className='p-5'>product</li>
                         <li className='p-5'>features</li>
@@ -70,8 +73,12 @@ const Navbar = () => {
                 <div className="flex items-center justify-center text-2xl gap-3 cursor-pointer">
                     <CiSearch />
                     <IoSettingsOutline />
-                    
-                        <Link to ={"/cart"} className="flex items-center gap-1">  <CiShoppingBasket  /></Link><span className='text-sm ml'>{Selector.length}</span> 
+                    {/* <FaShoppingCart /> */}
+                    <Link to="/cart" className="flex items-center gap-1 text-black">
+  <FontAwesomeIcon icon={faShoppingCart} />
+  <span className="text-sm ml text-black">{Selector.length}</span>
+</Link>
+                {/* <Link to ={"/cart"} className="flex items-center gap-1">  <FaShoppingCart /></Link><span className='text-sm ml'>{Selector.length}</span>  */}
                     
                 </div>
             </div>
